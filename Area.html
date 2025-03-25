@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Area Unit Converter</title>
+    <link rel="stylesheet" href="Lstyle.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Area Unit Converter</h1>
+        <div class="converter">
+            <div class="input-section">
+                <label for="inputValue">Input Value</label>
+                <input type="number" id="inputValue" placeholder="Enter value" />
+                
+                <label for="inputUnit">From</label>
+                <select id="inputUnit">
+                    <option value="sqmeter">Sequre Meter</option>
+                    <option value="sqfeet">Sequre Feet</option>
+                    <option value="sqyards">Sequre Yards</option>
+                    <option value="acres">Acres</option>
+                    <option value="hec">Hecatres</option>
+                </select>
+            </div>
+            <div class="output-section">
+                <label for="outputUnit">To</label>
+                <select id="outputUnit">
+                    <option value="sqmeter">Sequre Meter</option>
+                    <option value="sqfeet">Sequre Feet</option>
+                    <option value="sqyards">Sequre Yards</option>
+                    <option value="acres">Acres</option>
+                    <option value="hec">Hecatres</option>
+                </select>
+                
+                <input type="text" id="outputValue" placeholder="Converted value" readonly />
+            </div>
+            <button id="convertButton">Convert</button>
+        </div>
+    </div>
+
+    <script src="Ascript.js"></script>
+</body>
+</html>

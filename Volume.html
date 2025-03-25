@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volume Unit Converter</title>
+    <link rel="stylesheet" href="Lstyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Volume Unit Converter</h1>
+        <div class="converter">
+            <div class="input-section">
+                <label for="inputValue">Input Value</label>
+                <input type="number" id="inputValue" placeholder="Enter value" />
+                
+                <label for="inputUnit">From</label>
+                <select id="inputUnit">
+                    <option value="milileter">Milileters</option>
+                    <option value="liter">Liter</option>
+                    <option value="galoon">US Galoon</option>
+                    <option value="pint">Pint</option>
+                    <option value="ounce">Ounce</option>
+                </select>
+            </div>
+            <div class="output-section">
+                <label for="outputUnit">To</label>
+                <select id="outputUnit">
+                    <option value="milileter">Milileters</option>
+                    <option value="liter">Liter</option>
+                    <option value="galoon">US Galoon</option>
+                    <option value="pint">Pint</option>
+                    <option value="ounce">Ounce</option>
+                </select>
+                
+                <input type="text" id="outputValue" placeholder="Converted value" readonly />
+            </div>
+            <button id="convertButton">Convert</button>
+        </div>
+    </div>
+
+    <script src="Vscript.js"></script>
+</body>
+</html>

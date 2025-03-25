@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hijri-Gregorian Date Converter</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <!-- Updated CDN links -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/moment-hijri@2.1.2/moment-hijri.min.js"></script>
+    <link rel="stylesheet" href="Dstyle.css">
+
+</head>
+<body>
+    <div class="converter">
+        <h1>Date Converter</h1>
+        <div class="input-group">
+            <label for="hijri">Hijri Date (YYYY-MM-DD)</label>
+            <input type="text" id="hijri" placeholder="Enter Hijri date (e.g., 1445-10-15)">
+        </div>
+        
+        <div class="input-group">
+            <label for="gregorian">Gregorian Date</label>
+            <input type="text" id="gregorian" readonly>
+        </div>
+
+        <button onclick="convertDate()">Convert</button>
+        <div id="error-message" class="error"></div>
+    </div>
+
+    <script src="Dscript.js"></script>
+</body>
+</html>
